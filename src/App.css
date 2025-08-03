@@ -1,0 +1,47 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins',sans-serif;
+
+}
+.light {
+    background-color: white;
+    color: black;
+  }
+  
+.dark {
+    background-color: rgba(65, 65, 75, 0.945);
+    color: white;
+}
+
+.navbar.light{
+    background: rgb(202, 213, 223);
+
+}
+.navbar.dark{
+    background-color: rgba(43, 43, 61, 0.945);
+}
+.navbar.dark .logo{
+    color: white;
+}
+.product-card{
+    min-height: 95%;
+}
+.navbar-toggler-icon.dark{
+    color: #fff;
+}
+.hamburger-icon.dark{
+     background-color: rgba(43, 43, 61, 0.945);
+}
+.hamburger-icon.light{
+    background: rgb(202, 213, 223)
+}
+
+/* login and signup form button transition */
+.transition-variant {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.transition-variant:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
