@@ -43,11 +43,11 @@ const SignUpForm = () => {
 
     try{
       //API call to backend
-      console.log('SignUp data:', formData);
+      // console.log('SignUp data:', formData);
       const response = await axios.post('https://shopzy-e-commerce-website.onrender.com/api/auth/signup', formData)
 
       if(response.status === 201){
-        console.log('Signup success:', response.data.msg);
+        // console.log('Signup success:', response.data.msg);
         setShowAlert(true);
         setTimeout(()=>{
           navigate('/login')
