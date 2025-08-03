@@ -36,7 +36,7 @@ const LoginForm = () => {
     }
     
     try {
-      const response= await axios.post ('http://localhost:5000/api/auth/login', {        
+      const response= await axios.post ('https://shopzy-backend-o32f.onrender.com/api/auth/login', {        
         username: formData.username, 
         password: formData.password, 
       });
