@@ -42,7 +42,7 @@ const SignUpForm = () => {
     try{
       //API call to backend
       // console.log('SignUp data:', formData);
-      const response = await axios.post(`${import.meta.env.VVITE_BACKEND_URL}/api/auth/signup`, formData)
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/signup`, formData)
 
       if(response.status === 201){
         // console.log('Signup success:', response.data.msg);
