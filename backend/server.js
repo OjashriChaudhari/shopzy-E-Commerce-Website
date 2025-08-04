@@ -9,7 +9,8 @@ connectDB();
 
 const app = express();
 app.use(cors({
-    origin: 'https://shopzy-e-commerce-website.vercel.app/',
+    origin: 'https://shopzy-e-commerce-website.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
 app.use(express.json());
