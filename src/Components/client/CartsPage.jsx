@@ -40,7 +40,7 @@ const CartsPage = () => {
 
     {isOrderPlaced && (
        <div className='text-center' style={{marginTop: '8rem'}}>
-        <div className='mb-3'><span className='fw-semibold fs-5 text-muted'>Thank You for Shopping!</span></div>
+        <div className='mb-3'><p className={`${theme === 'dark' ? 'text-white' :'text-muted'} fw-semibold fs-5`}>Thank You for Shopping!</p></div>
         <Link to='/'>
         <Button variant='outline-success fw-semibold px-5 fs-5'>Shop Again</Button>
        </Link>
