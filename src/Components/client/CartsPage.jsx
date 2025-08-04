@@ -42,7 +42,7 @@ const CartsPage = () => {
        <div className='text-center' style={{marginTop: '8rem'}}>
         <div className='mb-3'><p className={`${theme === 'dark' ? 'text-white' :'text-muted'} fw-semibold fs-5`}>Thank You for Shopping!</p></div>
         <Link to='/'>
-        <Button variant='outline-success fw-semibold px-5 fs-5'>Shop Again</Button>
+        <Button variant='outline-success' className={`${theme === 'dark' ? 'bg-success text-white' : ''} fw-semibold px-5 fs-5`}>Shop Again</Button>
        </Link>
       </div>
     )}
