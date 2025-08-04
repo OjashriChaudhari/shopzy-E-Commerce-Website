@@ -7,8 +7,6 @@ import { FaRegUser, FaMobileAlt, FaLock, FaCheckCircle, FaEye, FaEyeSlash} from 
 import { MdOutlineMail } from "react-icons/md";
 import axios from 'axios';
 
-
-
 const SignUpForm = () => {
   const {theme} = useSelector(state=> state.theme)
   const [formData, setFormData] = useState(
@@ -44,7 +42,7 @@ const SignUpForm = () => {
     try{
       //API call to backend
       // console.log('SignUp data:', formData);
-      const response = await axios.post('https://shopzy-e-commerce-website.onrender.com/api/auth/signup', formData)
+      const response = await axios.post(`${import.meta.env.VVITE_BACKEND_URL}/api/auth/signup`, formData)
 
       if(response.status === 201){
         // console.log('Signup success:', response.data.msg);
