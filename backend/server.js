@@ -15,6 +15,12 @@ app.use(cors({
 }));
 app.use(express.json());
 
+//test route
+app.get('/api/test',(req, res)=>{
+    res.send('API is working!');
+});
+
+//auth route
 app.use('/api/auth', authRoutes);
 
 const PORT = 5000
